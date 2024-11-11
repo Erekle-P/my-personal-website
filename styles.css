@@ -1,0 +1,70 @@
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #quote-box {
+    border: 2px solid #b9be74;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for reference positioning */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #dddddd;
+  }
+  
+  /* Mouseover effect for the quote */
+  #quote:hover {
+    color: #534343;
+    background-color: #80b9f7;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Style for the image */
+  #wise-man {
+    position: absolute;
+    top: 20px; /* Start position */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    transition: top 0.5s, left 0.5s; /* Smooth transition when moving */
+  }
+  
